@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Maximseg Supervisor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_rounds">Rondas</string>
+    <string name="menu_novedad">Novedades</string>
+    <string name="menu_map">Puntos de Ronda</string>
+
+    <string name="menu_punto_novedad">Novedades de Punto</string>
+    <string name="menu_cliente_punto">Ronda</string>
+    <string name="menu_avisos">Avisos</string>
+
+    <string name="menu_informe">Informes</string>
+    <string name="menu_create_informe">Crear Informe</string>
+    <string name="menu_incumplimiento">Incumplimientos</string>
+    <string name="menu_crear_incumplimiento">Crear Incumplimientos</string>
+    <string name="menu_crear_novedad">Crear Novedad</string>
+    <string name="menu_novedad_detalles">Detalles de Novedad</string>
+    <string name="menu_crear_novedad_detalles">Crear Detalle de Novedad</string>
+    <string name="menu_punto_inventario">Inventario</string>
+    <string name="menu_inventario">Revisión de Inventario</string>
+    <string name="menu_inventario_reporte">Reportar Producto</string>
+    <string name="menu_punto_tareas">Tareas de Punto</string>
+    <string name="menu_supervisor_tareas">Tareas de Supervisor</string>
+
+    <string name="menu_chat_cliente">Chat Cliente</string>
+
+
+    <string name="persistent_notification">Maximseg está salvaguardando su ubicación.</string>
+    <string name="channel_name">ulocation</string>
+    <plurals name="num_locations_reported">
+        <item quantity="zero">No location reported</item>
+        <item quantity="one">One location reported</item>
+        <item quantity="other">%d locations reported</item>
+    </plurals>
+
+    <string name="btn_login">Iniciar turno</string>
+    <string name="btn_si">Si</string>
+    <string name="btn_no">No</string>
+    <string name="btn_scan_client">Escanear código de parada</string>
+    <string name="btn_create_informe">Crear Informe</string>
+    <string name="btn_crear_detalle">Crear Detalle</string>
+    <string name="btn_start_inventario">Iniciar Inventario</string>
+    <string name="btn_end_cliente">Finalizar Revisión de cliente</string>
+    <string name="create_news">Notificar Novedad</string>
+    <string name="btn_start_ronda">Iniciar ronda</string>
+    <string name="btn_end_ronda">Finalizar Ronda</string>
+
+
+    <string name="btn_save">Guardar</string>
+    <string name="btn_attach">Guardar</string>
+
+    <string name="error_heavy">El archivo seleccionado es demasiado pesado.</string>
+    <string name="error_permissions">No autorizó los permisos.</string>
+    <string name="error_general">Ha ocurrido un error inesperado.</string>
+    <string name="error_empty">No puede ingresar datos vacios.</string>
+    <string name="error_inventario">Debe terminar la revisíon de inventario.</string>
+    <string name="error_location">Ha ocurrido un error al obtener su ubicación. Asegúrese de haber activado la geolocalización.</string>
+    <string name="error_no_results">No hay resultados.</string>
+    <string name="error_no_inventario">El punto no cuenta con inventario asignado.</string>
+    <string name="error_no_tarea">El punto no cuenta con tarea asignado.</string>
+    <string name="error_no_rondas">No cuenta con rondas asignadas.</string>
+    <string name="error_internet">Necesita una conexión a internet para acceder a esta funcionalidad.</string>
+    <string name="error_internet2">No se dectectó conexión a internet. Inténtelo de nuevo.</string>
+    <string name="error_supervisor">Esta aplicación solo puede ser usada por un supervisor.</string>
+    <string name="unknown_location">La ubicación no pudo obtenerse.</string>
+
+
+    <string name="alert_end_ronda">¿Existió alguna novedad durante este proceso? Por favor, ingrésala.</string>
+
+    <string name="si">Si</string>
+    <string name="no">no</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_marca">Marca</string>
+
+    <string name="hint_subtext">Subtexto</string>
+    <string name="hint_inventario">Revisar Inventario</string>
+    <string name="hint_tareas">Tareas</string>
+
+    <string name="hint_punto">Nombre de Punto</string>
+    <string name="hint_guardia">Nombre de Guardia</string>
+    <string name="hint_datetime">2019-01-01</string>
+    <string name="hint_time">00:00</string>
+
+    <string name="hint_logout">Terminar turno</string>
+    <string name="hint_attach_image">Adjuntar imagen</string>
+    <string name="hint_attached_image">Imagen adjuntada</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_direccion">Dirección</string>
+
+    <string name="publico">Público</string>
+    <string name="privado">Privado</string>
+
+
+    <string name="alert_end_turno">¿Desea terminar su turno? Se marcará su turno como terminado.</string>
+    <string name="alert_login">Escriba su cédula.</string>
+    <string name="alert_change_privacy">¿Desea cambiar la privacidad de este elemento?</string>
+    <string name="alert_end_tarea">¿Completó la tarea? Se marcará la tarea como hecha.</string>
+
+
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+
+    <item name="id" type="id" />
+    <item name="position" type="id" />
+    <item name="cliente" type="id" />
+
+
+    <string-array name="privacidad">
+        <item>Privado</item>
+        <item>Público</item>
+    </string-array>
+</resources>

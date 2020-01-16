@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_perfil"
+            android:title="@string/menu_home" />
+        <!--<item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_send" />-->
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_rondas"
+            android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_cliente_puntos"
+            android:icon="@drawable/ic_check"
+            android:title="@string/menu_cliente_punto" />
+        <item
+            android:id="@+id/nav_informe"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/menu_informe" />
+        <item
+            android:id="@+id/nav_incumplimiento"
+            android:icon="@drawable/ic_paper"
+            android:title="@string/menu_incumplimiento" />
+        <item
+            android:id="@+id/nav_novedad"
+            android:icon="@drawable/ic_novedad"
+            android:title="@string/menu_novedad" />
+        <!--<item
+            android:id="@+id/nav_avisos"
+            android:icon="@android:drawable/ic_popup_reminder"
+            android:title="@string/menu_avisos" />-->
+    </group>
+</menu>

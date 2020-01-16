@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.neobit.maxsupervisor.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <!--
+        <fragment
+            android:id="@+id/nav_gallery"
+            android:name="com.neobit.maxsupervisor.ui.gallery.GalleryFragment"
+            android:label="@string/menu_gallery"
+            tools:layout="@layout/fragment_gallery" />
+
+        <fragment
+            android:id="@+id/nav_slideshow"
+            android:name="com.neobit.maxsupervisor.ui.slideshow.SlideshowFragment"
+            android:label="@string/menu_slideshow"
+            tools:layout="@layout/fragment_slideshow" />
+
+        <fragment
+            android:id="@+id/nav_tools"
+            android:name="com.neobit.maxsupervisor.ui.tools.ToolsFragment"
+            android:label="@string/menu_tools"
+            tools:layout="@layout/fragment_tools" />
+
+        <fragment
+            android:id="@+id/nav_share"
+            android:name="com.neobit.maxsupervisor.ui.share.ShareFragment"
+            android:label="@string/menu_share"
+            tools:layout="@layout/fragment_share" />
+        <fragment
+            android:id="@+id/nav_send"
+            android:name="com.neobit.maxsupervisor.ui.send.SendFragment"
+            android:label="@string/menu_send"
+            tools:layout="@layout/fragment_send" />-->
+    <fragment
+        android:id="@+id/nav_cliente_puntos"
+        android:name="com.neobit.maxsupervisor.ui.Puntos.ClientePuntoFragment"
+        android:label="@string/menu_cliente_punto"
+        tools:layout="@layout/cliente_punto_fragment" >
+        <action
+            android:id="@+id/action_nav_cliente_puntos_to_nav_punto_inventario"
+            app:destination="@id/nav_punto_inventario" />
+        <action
+            android:id="@+id/action_nav_cliente_puntos_to_nav_tareas"
+            app:destination="@id/nav_tareas" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_informe"
+        android:name="com.neobit.maxsupervisor.ui.Informes.InformesFragment"
+        android:label="@string/menu_informe"
+        tools:layout="@layout/informes_fragment" >
+        <action
+            android:id="@+id/action_nav_informe_to_nav_crear_informe"
+            app:destination="@id/nav_crear_informe" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crear_informe"
+        android:name="com.neobit.maxsupervisor.ui.Informes.InformeCreateFragment"
+        android:label="@string/menu_create_informe"
+        tools:layout="@layout/informe_create_fragment" />
+    <fragment
+        android:id="@+id/nav_incumplimiento"
+        android:name="com.neobit.maxsupervisor.ui.Incumplimientos.IncumplimientosFragment"
+        android:label="@string/menu_incumplimiento"
+        tools:layout="@layout/incumplimientos_fragment" >
+        <action
+            android:id="@+id/action_nav_incumplimiento_to_nav_crear_incumplimiento"
+            app:destination="@id/nav_crear_incumplimiento" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crear_incumplimiento"
+        android:name="com.neobit.maxsupervisor.ui.Incumplimientos.IncumplimientoCrearFragment"
+        android:label="@string/menu_crear_incumplimiento"
+        tools:layout="@layout/incumplimiento_crear_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_novedad"
+        android:name="com.neobit.maxsupervisor.ui.Novedades.NovedadesFragment"
+        android:label="@string/menu_novedad"
+        tools:layout="@layout/fragment_novedades" >
+        <action
+            android:id="@+id/action_nav_novedad_to_nav_punto_novedades"
+            app:destination="@id/nav_punto_novedades" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_punto_novedades"
+        android:name="com.neobit.maxsupervisor.ui.Novedades.PuntoNovedadesFragment"
+        android:label="@string/menu_punto_novedad"
+        tools:layout="@layout/punto_novedades_fragment" >
+        <action
+            android:id="@+id/action_nav_punto_novedades_to_nav_crear_novedad"
+            app:destination="@id/nav_crear_novedad" />
+        <action
+            android:id="@+id/action_nav_punto_novedades_to_nav_novedad_detalles"
+            app:destination="@id/nav_novedad_detalles" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crear_novedad"
+        android:name="com.neobit.maxsupervisor.ui.Novedades.NovedadCrearFragment"
+        android:label="@string/menu_crear_novedad"
+        tools:layout="@layout/novedad_crear_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_novedad_detalles"
+        android:name="com.neobit.maxsupervisor.ui.Novedades.NovedadDetallesFragment"
+        android:label="@string/menu_novedad_detalles"
+        tools:layout="@layout/novedad_detalles_fragment" >
+        <action
+            android:id="@+id/action_nav_novedad_detalles_to_nav_crear_novedad_detalle"
+            app:destination="@id/nav_crear_novedad_detalle" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_crear_novedad_detalle"
+        android:name="com.neobit.maxsupervisor.ui.Novedades.NovedadDetalleCrearFragment"
+        android:label="@string/menu_crear_novedad_detalles"
+        tools:layout="@layout/novedad_detalle_crear_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_punto_inventario"
+        android:name="com.neobit.maxsupervisor.ui.Puntos.PuntoInventarioFragment"
+        android:label="@string/menu_punto_inventario"
+        tools:layout="@layout/punto_inventario_fragment" >
+        <action
+            android:id="@+id/action_nav_punto_inventario_to_nav_inventario"
+            app:destination="@id/nav_inventario" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_inventario"
+        android:name="com.neobit.maxsupervisor.ui.Puntos.InventarioFragment"
+        android:label="@string/menu_inventario"
+        tools:layout="@layout/inventario_fragment" >
+        <action
+            android:id="@+id/action_nav_inventario_to_nav_inventario_reporte"
+            app:destination="@id/nav_inventario_reporte" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_inventario_reporte"
+        android:name="com.neobit.maxsupervisor.ui.Puntos.InventarioReporteFragment"
+        android:label="@string/menu_inventario_reporte"
+        tools:layout="@layout/inventario_reporte_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.neobit.maxsupervisor.ui.Mapa.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/map_fragment" >
+        <action
+            android:id="@+id/action_nav_map_to_nav_chat_cliente"
+            app:destination="@id/nav_chat_cliente" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_avisos"
+        android:name="com.neobit.maxsupervisor.ui.Avisos.AvisosFragment"
+        android:label="@string/menu_avisos"
+        tools:layout="@layout/avisos_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tareas"
+        android:name="com.neobit.maxsupervisor.ui.Puntos.TareasFragment"
+        android:label="@string/menu_punto_tareas"
+        tools:layout="@layout/tareas_fragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chat_cliente"
+        android:name="com.neobit.maxsupervisor.ui.Mapa.ChatClienteFragment"
+        android:label="@string/menu_chat_cliente"
+        tools:layout="@layout/chat_cliente_fragment" >
+    </fragment>
+
+</navigation>

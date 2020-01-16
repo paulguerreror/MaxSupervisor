@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Incumplimientos.IncumplimientoCrearFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageButton
+                        android:id="@+id/btnAdjunto"
+                        android:layout_width="48dp"
+                        android:layout_height="39dp"
+                        android:background="@drawable/btn_attach"
+                        android:padding="5dp" />
+                    <TextView
+                        android:id="@+id/txtadjunto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/hint_attach_image"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/txtCrearIncumplimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/multilineborder"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:maxLines="12"
+                    android:minLines="8"
+                    android:padding="5dp"
+                    android:scrollbars="vertical" />
+                <Button
+                    android:id="@+id/btnCrearIncumplimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/progressView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="140dip"
+                android:minHeight="140dip"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress"
+                android:padding="100dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
